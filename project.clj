@@ -2,11 +2,14 @@
   :min-lein-version "2.5.0"
 
   :dependencies
-  [[com.jayway.jsonpath/json-path "2.3.0"]]
+  [[com.jayway.jsonpath/json-path "2.3.0"]
+   [jakarta.xml.bind/jakarta.xml.bind-api "2.3.2"]
+   [org.glassfish.jaxb/jaxb-runtime "2.3.2"]
+   ]
 
   :jvm-opts
   ["-XX:+IgnoreUnrecognizedVMOptions"
-   "--add-modules=java.xml.bind"]
+   ]
 
   :profiles
   {:provided
